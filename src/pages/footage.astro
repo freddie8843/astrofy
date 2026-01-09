@@ -1,0 +1,111 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const footage = [
+  {
+    title: "Hangzhou Skyline · Drone Footage",
+    location: "Hangzhou, China",
+    date: "2023",
+    thumbnail: "/footage/hangzhou-thumb.jpg",
+    videoUrl: "https://youtu.be/r8Pc99gi_ho",
+  },
+  {
+    title: "Takayama Drone Flight",
+    location: "Takayama, Japan",
+    date: "2024",
+    thumbnail: "/footage/takayama-thumb.jpg",
+    videoUrl: "https://youtu.be/LZcbBxYB-yo",
+  },
+  {
+    title: "Jiangsu · Drone Footage",
+    location: "Jiangsu, China",
+    date: "2023",
+    thumbnail: "/footage/jiangsu-thumb.jpg",
+    videoUrl: "https://youtu.be/OxaacH23qyY",
+  },
+  {
+    title: "Ningbo Seaside Sunrise Flight",
+    location: "Ningbo, China",
+    date: "2022",
+    thumbnail: "/footage/ningbo-thumb.jpg",
+    videoUrl: "https://youtu.be/7AQhWUT9HO4",
+  },
+  {
+    title: "Mt. YunFeng · Drone Footage",
+    location: "Zhejiang, China",
+    date: "2023",
+    thumbnail: "/footage/yunfeng-thumb.jpg",
+    videoUrl: "https://youtu.be/S1E7QG5Q8Jo",
+  },
+  {
+    title: "Tianyu Sunrise Flight",
+    location: "Zhejiang, China",
+    date: "2022",
+    thumbnail: "/footage/tianyu-thumb.jpg",
+    videoUrl: "https://youtu.be/21FdRcdOnfo",
+  },
+  {
+    title: "Lake Kawaguchi · Drone Footage",
+    location: "Lake Kawaguchi, Japan",
+    date: "2023",
+    thumbnail: "/footage/kawaguchi-thumb.jpg",
+    videoUrl: "https://youtu.be/PzWRUffNsZk",
+  },
+  {
+    title: "Niseko Ski Resort",
+    location: "Niseko, Japan",
+    date: "2022",
+    thumbnail: "/footage/Niseko-thumb.jpg",
+    videoUrl: "https://youtu.be/CUT1mZNeGYM",
+  },
+  {
+    title: "Shibokusa Footage",
+    location: "Shibokusa, Japan",
+    date: "2022",
+    thumbnail: "/footage/shibokusa-thumb.jpg",
+    videoUrl: "https://www.youtube.com/watch?v=7OuiNXdaZuI",
+  },
+];
+---
+
+<BaseLayout title="Footage" sideBarActiveItemID="footage">
+  <section>
+    <h1 class="text-3xl font-bold mb-6">Footage</h1>
+    <p class="opacity-70 mb-8 max-w-2xl">
+      Selected aerial footage captured using consumer and semi-professional drones,
+      focusing on urban landscapes, skyline composition, and motion stability.
+    </p>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {footage.map((clip) => (
+        <a
+          href={clip.videoUrl}
+          target="_blank"
+          rel="noreferrer"
+          class="group rounded-xl overflow-hidden bg-base-200 hover:shadow-lg transition"
+        >
+          <div class="relative aspect-video">
+            <img
+              src={clip.thumbnail}
+              alt={clip.title}
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform"
+            />
+            <div class="absolute inset-0 bg-black/20"></div>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="bg-black/60 text-white px-4 py-2 rounded-lg text-sm">
+                ▶ Watch
+              </div>
+            </div>
+          </div>
+
+          <div class="p-4">
+            <div class="font-semibold">{clip.title}</div>
+            <div class="text-sm opacity-70">
+              {clip.location} · {clip.date}
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
