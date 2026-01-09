@@ -1,0 +1,50 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const publications = [
+  {
+    title: "A New Method to Reduce Near-Infrared Data of Palomar Observatory",
+    venue: "International Conference on Applied Physics and Mathematics (ICAPM)",
+    date: "May 25, 2022",
+    link: "https://iopscience.iop.org/article/10.1088/1742-6596/2287/1/012037",
+    abstract: `
+Compared to large optical spectral surveys, near infrared spectra are overwhelmingly outnumbered.
+Using data from the Palomar 200-inch telescope (P200) with the TripleSpec NIR spectrograph,
+we developed a new automated data reduction pipeline that recovers previously ignored spectral
+orders, extends wavelength coverage from 1–2.5 μm to 0.9–2.5 μm, and improves median SNR by a
+factor of 2. The pipeline generalizes to other NIR instruments and will be released alongside
+over 200 newly collected quasar spectra.
+`
+  }
+];
+---
+
+<BaseLayout title="Publications" sideBarActiveItemID="publications">
+  <section class="max-w-3xl">
+    <h1 class="text-3xl font-bold mb-6">Publications</h1>
+
+    {publications.map((paper) => (
+      <article class="mb-10 p-6 rounded-xl bg-base-200 shadow-sm">
+        <h2 class="text-xl font-semibold mb-1">
+          {paper.title}
+        </h2>
+
+        <p class="text-sm opacity-70 mb-3">
+          {paper.venue} · {paper.date}
+        </p>
+
+        <p class="mb-4 leading-relaxed">
+          {paper.abstract}
+        </p>
+
+        <a
+          href={paper.link}
+          target="_blank"
+          class="btn btn-sm btn-outline"
+        >
+          View publication
+        </a>
+      </article>
+    ))}
+  </section>
+</BaseLayout>
