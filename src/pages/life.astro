@@ -1,0 +1,66 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const sections = [
+  {
+    title: "Archery",
+    items: [
+      { src: "/life/archery-1.jpg", caption: "Trojan Archery — training and competition." },
+      { src: "/life/archery-2.jpg", caption: "Team moments and practice sessions." },
+    ],
+  },
+  {
+    title: "Campus & Work",
+    items: [
+      { src: "/life/campus-1.jpg", caption: "USC life — studying and building." },
+      { src: "/life/work-1.jpg", caption: "Internship memories and team collaboration." },
+    ],
+  },
+  {
+    title: "Travel",
+    items: [
+      { src: "/life/travel-1.jpg", caption: "Exploring new places and collecting stories." },
+      { src: "/life/travel-2.jpg", caption: "A small break to reset and learn." },
+    ],
+  },
+];
+---
+
+<BaseLayout title="Life" sideBarActiveItemID="life">
+  <div class="mb-6">
+    <div class="text-3xl w-full font-bold">Life</div>
+    <div class="opacity-70 mt-2">
+      A few moments outside of coursework and engineering — what keeps me grounded and energized.
+    </div>
+  </div>
+
+  <div class="space-y-12">
+    {sections.map((s) => (
+      <section>
+        <h2 class="text-xl font-semibold mb-4">{s.title}</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {s.items.map((it) => (
+            <div class="card bg-base-200 overflow-hidden">
+              <figure class="bg-base-300">
+                <img
+                  src={it.src}
+                  alt={it.caption}
+                  class="w-full h-56 object-cover"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="card-body p-4">
+                <p class="text-sm opacity-70">{it.caption}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    ))}
+  </div>
+
+  <div class="mt-10 opacity-60 text-sm">
+    Tip: Add or replace images under <code>public/life/</code>. Keep filenames consistent with the page.
+  </div>
+</BaseLayout>

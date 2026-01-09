@@ -4,89 +4,178 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 ---
 
 <BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <!-- PROFILE -->
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Profile</div>
   </div>
 
   <div class="mb-10 text-justify">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    I'm Fred (Rongfei) Shao, a Data Science and Applied & Computational Math student at USC with a strong foundation in backend engineering, infrastructure automation, and data analysis.
+    I’ve contributed to large-scale system reliability projects, including BDMS at UCloud—enabling one-click deployment and lifecycle automation for Kafka, Etcd, and Elasticsearch, reducing delivery time from 3 days to 0.5 hr across 176 clusters and 600+ nodes.
+    I’ve also built cost analysis pipelines and improved reliability across MySQL, MongoDB, and RocketMQ, and received UCloud’s internal Luban Award (鲁班奖) for innovation and impact.
   </div>
 
+  <!-- EDUCATION -->
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Education</div>
   </div>
 
   <div class="time-line-container grid gap-4 mb-10">
     <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
+      title="University of Southern California"
+      subtitle="B.S., Computational and Applied Mathematics / Data Science · Aug 2023 – May 2027"
     />
     <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
+      title="Pickering College"
+      subtitle="High School Diploma · Sep 2019 – Jun 2023"
+    />
+    <TimeLineElement
+      title="Brown University"
+      subtitle="Summer Program: Habitable Worlds · Jul 2022 – Aug 2022"
     />
   </div>
 
+  <!-- EXPERIENCE -->
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Experience</div>
   </div>
 
   <div class="time-line-container mb-10">
     <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
+      title="TikTok — Site Reliability Engineer Intern"
+      subtitle="Dec 2025 – Present · San Jose, CA · Incoming 2026 Summer"
+    />
+
     <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+      title="USC Marshall School of Business — Research Assistant"
+      subtitle="Sep 2025 – Present · Los Angeles, CA"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      Executed an end-to-end data pipeline using Google’s Gemini AI to categorize and extract structured data from YouTube videos focused on Alzheimer’s patient–caregiver interactions. Utilized Python with the YouTube Data API and Gemini API; performed human-in-the-loop validation and correction to ensure dataset accuracy.
     </TimeLineElement>
+
     <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+      title="Trojan Archery at USC — Team Captain"
+      subtitle="Oct 2023 – Present · Los Angeles, CA"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      USC Trojan Archery compound bow team captain.
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="UCloud — Site Reliability Engineer Intern"
+      subtitle="May 2025 – Sep 2025 · Yangpu District, Shanghai, China"
+    >
+      Standardized and automated deployment and lifecycle management for Kafka/Etcd/Elasticsearch; reduced delivery time from 3 days to 0.5 hr across 176 clusters and 600+ nodes; enabled future support for 6,000+ instances (Redis/MySQL in progress). Received internal Luban Award (鲁班奖) for innovation and impact.
+      Built a Python automation pipeline integrating REST APIs to aggregate resource usage from global clusters, apply regional pricing models, and generate Excel cost reports—improving billing accuracy and boosting profit by ~2%.
+      Led full-stack deployment and configuration of MySQL 5.6/5.7/8.0 clusters in restricted environments; resolved RPM/Perl issues, patched legacy scripts, and refactored Ansible for multi-version MHA and cross-platform compatibility.
+      Modified and migrated cluster/node structures for MongoDB, RocketMQ, Elasticsearch, and ETCD using Go, Postman, MySQL, and YAML scripting; supported auto-deployment, failover, disaster recovery, and 24/7 ops across Linux environments.
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="Dream Schools AI — Founder Software Engineer"
+      subtitle="May 2025 – Aug 2025 · Seattle, WA"
+    >
+      Designed a web crawler algorithm using image recognition and machine learning models to build a robust database and improve education consulting accuracy for clients.
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="Phalanx Analysis Group — Data Analyst"
+      subtitle="Feb 2025 – Apr 2025 · San Francisco Bay Area"
+    >
+      Analyzed the U.S. restaurant industry using three years of data; identified YoY trends by sales growth, business size, emerging brands, and rankings; noted post-COVID rise of low-cost fast-food (boba/cafés/bakeries) and 2024 saturation; recommended data-driven reporting and strategy opportunities.
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="University of Cambridge — Solo Researcher"
+      subtitle="Jul 2024 · Shanghai, China"
+    >
+      Completed a project under Mr. Kieren Lovell: developing a computer science prototype to prevent negative labeling in teenage internet users; submitted a paper and built a prototype website.
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="Tsinghua University — Assistant Product Development Engineer"
+      subtitle="Jun 2024 – Jul 2024 · Suzhou, Jiangsu, China"
+    >
+      Developed and launched a real-time dashboard for autonomous prototype vehicle testing using Vue.js, HTML, ECharts, and MongoDB; integrated telemetry and road test data with backend and computer vision teams to support monitoring, troubleshooting, and field trials.
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="Weitai Biological Pharmaceutical Co., Ltd — Medic Data Intern"
+      subtitle="May 2024 – Jun 2024 · Shanghai, China"
+    >
+      Managed a drug inventory database using MongoDB and TypeScript; gained hands-on experience in data collection, entry, classification, storage, and retrieval.
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="Pickering College — Head Proctor"
+      subtitle="Sep 2022 – Jun 2023 · Toronto, Ontario, Canada"
+    >
+      Joined the high school student committee as Head Proctor for New House.
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="First Robotics Team 8349 — Hardware Technician"
+      subtitle="Sep 2022 – May 2023 · Toronto, Ontario, Canada"
+    >
+      Supported hardware build for a robotics prototype for a regional competition.
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="Shanghai Dapuqiao Community Center — Elder Care Volunteer"
+      subtitle="Jul 2020 – Aug 2020 · Shanghai, China"
+    >
+      Engaged with local community empty-nest elders; provided companionship and support.
     </TimeLineElement>
   </div>
 
+  <!-- CERTIFICATIONS -->
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Certifications</div>
   </div>
 
   <ul class="list-disc mx-6 mb-10 grid gap-2">
-    <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
-    </li>
-    <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
-    </li>
+    <li>USA Archery Level 2 Instructor Certificate</li>
   </ul>
 
+  <!-- SKILLS -->
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Skills</div>
+    <div class="text-3xl w-full font-bold">Top Skills</div>
   </div>
 
-  <ul class="list-disc md:columns-5 columns-2 mx-6">
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
+  <ul class="list-disc md:columns-4 columns-2 mx-6 mb-10">
+    <li>Prompt Engineering</li>
+    <li>Large Language Models (LLM)</li>
+    <li>Web Services API</li>
+  </ul>
+
+  <!-- LANGUAGES -->
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Languages</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>English (Full Professional)</li>
+    <li>Chinese (Native or Bilingual)</li>
+  </ul>
+
+  <!-- HONORS & AWARDS -->
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Honors & Awards</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>2021 YRSTF Science Fair Silver Medal</li>
+    <li>2022 Physics Bowl — 33/40 (Top 10 around Canada)</li>
+    <li>Recommendation from Professor Schultz (Brown University Summer Program: “Habitable Worlds”)</li>
+    <li>Thesis Publication Acceptance — ICAPM 2022 Academic Meeting</li>
+    <li>2022 Euclid Math Contest Distinction</li>
+  </ul>
+
+  <!-- PUBLICATIONS -->
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Publications</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>A New Method to Reduce Near-Infrared data of Palomar Observatory</li>
   </ul>
 </BaseLayout>

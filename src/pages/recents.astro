@@ -1,0 +1,103 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Now" sideBarActiveItemID="now">
+  <div class="mb-6">
+    <h1 class="text-3xl font-bold">What I’m Doing Now</h1>
+    <p class="opacity-70 mt-2">
+      A snapshot of what I’m currently studying, building, and preparing for.
+    </p>
+  </div>
+
+  <div class="space-y-8 max-w-3xl">
+
+    <!-- Academics -->
+    <section>
+      <h2 class="text-xl font-semibold mb-2">Academics @ USC</h2>
+      <p class="mb-4">
+        I am currently an undergraduate student at the University of Southern California,
+        focusing on data systems, machine learning, and mathematically rigorous foundations
+        that support large-scale computing.
+      </p>
+
+      <ul class="list-disc pl-6 space-y-2">
+        <li>
+          <strong>DSCI 351 – Foundations of Data Management</strong><br />
+          Data modeling, relational databases, indexing, NoSQL systems, distributed file systems,
+          and parallel computation for large-scale analytics.
+        </li>
+
+        <li>
+          <strong>DSCI 352 – Applied Machine Learning and Data Mining</strong><br />
+          Practical application and evaluation of machine learning models in data-intensive
+          scenarios, with emphasis on real-world performance and trade-offs.
+        </li>
+
+        <li>
+          <strong>MATH 458 – Numerical Methods</strong><br />
+          Numerical linear algebra, root finding, eigenvalue problems, approximation, and
+          numerical solutions to differential equations, with attention to stability and error.
+        </li>
+
+        <li>
+          <strong>MATH 408 – Mathematical Statistics</strong><br />
+          Hypothesis testing, confidence intervals, maximum likelihood estimation,
+          likelihood ratio tests, and non-parametric methods.
+        </li>
+
+        <li>
+          <strong>MATH 430 – Theory of Numbers</strong><br />
+          Prime factorization, congruences, primitive roots, number-theoretic functions,
+          and Diophantine equations, strengthening mathematical reasoning and rigor.
+        </li>
+
+        <li>
+          <strong>CSCI 104 – Data Structures</strong><br />
+          Core data structures including linked lists, balanced trees, heaps, hash tables,
+          and probabilistic analysis of algorithms.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Professional preparation -->
+    <section>
+      <h2 class="text-xl font-semibold mb-2">Preparing for TikTok SRE</h2>
+      <p>
+        I am actively preparing for my upcoming Site Reliability Engineering internship at TikTok.
+        My focus is on strengthening system-level understanding and operational thinking,
+        beyond coursework.
+      </p>
+    </section>
+
+    <!-- What I'm learning -->
+    <section>
+      <h2 class="text-xl font-semibold mb-2">Currently Learning</h2>
+      <ul class="list-disc pl-6 space-y-2">
+        <li>
+          <strong>Ansible</strong> — infrastructure automation, configuration management,
+          and reproducible deployments.
+        </li>
+        <li>
+          <strong>Observability</strong> — metrics, logging, alerting, and understanding system
+          behavior under failure conditions.
+        </li>
+        <li>
+          <strong>Distributed Systems Internals</strong> — reliability trade-offs, failure modes,
+          and operational best practices.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section>
+      <h2 class="text-xl font-semibold mb-2">Current Projects</h2>
+      <p>
+        I am working on small, focused projects related to infrastructure automation,
+        data pipelines, and system reliability, with the goal of turning them into
+        well-documented case studies.
+      </p>
+    </section>
+
+  </div>
+</BaseLayout>

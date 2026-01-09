@@ -1,0 +1,77 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Contact" sideBarActiveItemID="contact">
+  <div class="mb-6">
+    <h1 class="text-3xl font-bold">Contact</h1>
+    <p class="opacity-70 mt-2">
+      Feel free to reach out — email is the fastest way to contact me.
+    </p>
+  </div>
+
+  <div class="grid gap-4 max-w-2xl">
+    <div class="card bg-base-200">
+      <div class="card-body">
+        <div class="font-semibold">LinkedIn</div>
+        <a
+          class="link link-primary break-all"
+          href="https://www.linkedin.com/in/fred-rongfei-shao-7a1aba288/"
+          target="_blank"
+          rel="noreferrer">
+          linkedin.com/in/fred-rongfei-shao-7a1aba288
+        </a>
+      </div>
+    </div>
+
+    <div class="card bg-base-200">
+      <div class="card-body">
+        <div class="font-semibold">Work Email</div>
+        <a class="link link-primary" href="mailto:fredshao@usc.edu">
+          fredshao@usc.edu
+        </a>
+      </div>
+    </div>
+
+    <div class="card bg-base-200">
+      <div class="card-body">
+        <div class="font-semibold">Personal Email</div>
+        <a class="link link-primary" href="mailto:fred.shao88@gmail.com">
+          fred.shao88@gmail.com
+        </a>
+      </div>
+    </div>
+
+    <div class="card bg-base-200">
+      <div class="card-body">
+        <div class="font-semibold">Phone</div>
+        <a class="link link-primary" href="tel:+12132726258">
+          +1 (213) 272-6258
+        </a>
+      </div>
+    </div>
+
+    <div class="card bg-base-200">
+      <div class="card-body">
+        <div class="font-semibold">GitHub</div>
+        <a
+          class="link link-primary break-all"
+          href="https://github.com/freddie8843"
+          target="_blank"
+          rel="noreferrer">
+          github.com/freddie8843
+        </a>
+      </div>
+    </div>
+
+    <div class="pt-4">
+      <a
+        class="btn btn-primary w-full"
+        href="mailto:fredshao@usc.edu?cc=fred.shao88@gmail.com&subject=Contact%20from%20Website"
+        target="_blank"
+        rel="noreferrer">
+        Contact me
+      </a>
+    </div>
+  </div>
+</BaseLayout>
