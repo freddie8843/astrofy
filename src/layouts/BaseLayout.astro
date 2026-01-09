@@ -27,6 +27,15 @@ const {
     <div class="bg-base-100 drawer lg:drawer-open">
       <input id="my-drawer" type="checkbox" class="drawer-toggle" />
       <div class="drawer-content bg-base-100">
+      <!-- 🌆 Shanghai City Banner -->
+      <div class="relative w-full h-[260px] overflow-hidden">
+        <img
+          src="/hero/shanghai.jpg"
+          alt="Shanghai skyline"
+          class="absolute inset-0 w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-black/30"></div>
+      </div>
         <Header title={SITE_TITLE} />
         <div class="md:flex md:justify-center">
           <main class="p-6 pt-10 lg:max-w-[900px] max-w-[100vw]">
